@@ -13,6 +13,8 @@ class SearchBar extends React.Component {
       sortBy:'best_match'
     };
 
+
+
     this.sortByOptions = {
       'Best Match': 'best_match',
       'Highest Rated': 'rating',
@@ -26,6 +28,7 @@ class SearchBar extends React.Component {
 
   }
 
+  
     getSortByClass (sortByOption) {
       return this.state.sortBy === sortByOption ? 'active' : '' ;
     }
